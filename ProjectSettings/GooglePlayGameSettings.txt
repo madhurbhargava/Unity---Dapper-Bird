@@ -1,0 +1,8 @@
+lastUpgrade=00927
+proj.AppId=618893680417
+and.BundleId=com.lunarmonk.dapperbird
+proj.classDir=Assets
+proj.ConstantsClassName=GPGSIDS
+and.ResourceData=%3c%3fxml+version%3d%221.0%22+encoding%3d%22utf-8%22%3f%3e%0a%3c%21--%0aGoogle+Play+game+services+IDs.%0aSave+this+file+as+res%2fvalues%2fgames-ids.xml+in+your+project.%0a--%3e%0a%3cresources%3e%0a++%3cstring+name%3d%22app_id%22%3e618893680417%3c%2fstring%3e%0a++%3cstring+name%3d%22package_name%22%3ecom.lunarmonk.dapperbird%3c%2fstring%3e%0a++%3cstring+name%3d%22leaderboard_score%22%3eCgkIob7Ax4ESEAIQAQ%3c%2fstring%3e%0a%3c%2fresources%3e
+and.ClientId=
+android.SetupDone=true

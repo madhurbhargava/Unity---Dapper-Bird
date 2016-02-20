@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.lunarmonk.dapperbird" android:installLocation="preferExternal">
+  <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true" />
+  <application android:icon="@drawable/app_icon" android:label="@string/app_name" android:name="com.soomla.SoomlaApp" android:debuggable="false" android:isGame="true" android:banner="@drawable/app_banner">
+    <activity android:name="com.applovin.adview.AppLovinInterstitialActivity" />
+    <activity android:name="com.applovin.adview.AppLovinConfirmationActivity" />
+    <activity android:label="@string/app_name" android:name="com.unity3d.player.UnityPlayerActivity" android:screenOrientation="landscape" android:launchMode="singleTask" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+        <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mnc|mcc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode|touchscreen" android:label="@string/app_name" android:name="com.unity3d.player.VideoPlayer" android:screenOrientation="landscape">
+    </activity>
+    <meta-data android:name="applovin.sdk.key" android:value="PiNNTJhekCU6u218wnxF35GXHNEJ4O3U5RsZlXCSlhZclbmfMgvQnAy3XAMcTQ6esyCaUP2D5crqCaTTGN-2Xw" />
+    <meta-data android:name="applovin.sdk.verbose_logging" android:value="false" />
+    <activity android:name="com.soomla.profile.social.twitter.SoomlaTwitter$SoomlaTwitterActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+    <activity android:name="com.google.games.bridge.NativeBridgeActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+    <!-- Required for Nearby Connections API -->
+    <meta-data android:name="com.google.android.gms.nearby.connection.SERVICE_ID" android:value="" />
+    <!-- the space in these forces it to be interpreted as a string vs. int -->
+    <meta-data android:name="com.google.android.gms.games.APP_ID" android:value="\ 618893680417" />
+    <meta-data android:name="com.google.android.gms.appstate.APP_ID" android:value="\ 618893680417" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+  </application>
+  <!-- These permissions are mandatory to run AppLovin SDK -->
+  <uses-permission android:name="android.permission.INTERNET" />
+  <!-- These permissions are strongly recommended and will result in higher performance -->
+  <uses-permission android:maxSdkVersion="22" android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:maxSdkVersion="22" android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-feature android:glEsVersion="0x00020000" />
+  <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="23" />
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false" />
+</manifest>
